@@ -4,11 +4,5 @@
 }
 body {
   background-image: url("background.png");
-  background-color: #cccccc;
-  background-repeat: no-repeat;
-}
-.navbar {
-  background-image: url("backgrund.png");
-  background-color: #cccccc;
   background-repeat: no-repeat;
 }
