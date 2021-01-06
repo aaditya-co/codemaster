@@ -2,12 +2,12 @@
   padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
-body  {
+body {
   background-image: url("background.png");
   background-color: #cccccc;
   background-repeat: no-repeat;
 }
-.navbar{
+.navbar {
   background-image: url("background.png");
   background-color: #cccccc;
   background-repeat: no-repeat;
