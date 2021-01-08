@@ -2,10 +2,10 @@
   padding: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-body {
+/* body {
   background-image: url("background.png");
   background-repeat: no-repeat;
-}
+} */
 
 .h3 {
   color: rgba(25, 28, 197, 0.767);
