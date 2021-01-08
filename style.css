@@ -1,15 +1,8 @@
 .text {
   padding: 30px;
-  font-family: cansu_2bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 body {
   background-image: url("background.png");
   background-repeat: no-repeat;
-}
-
-@font-face {
-  font-family: "cansu_2bold";
-  src: url("./fonts/Cansu-Bold.ttf") format("ttf");
-  font-weight: bold;
-  font-style: normal;
 }
