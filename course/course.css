@@ -1,7 +1,6 @@
 .courses-list {
   width: 100%;
   display: flex;
-  /* justify-content: space-around; */
   flex-wrap: wrap;
 }
 
@@ -9,6 +8,8 @@
   margin: 10px;
   width: 200px;
   height: 200px;
+  margin-left: 28px;
+  margin-right: 10px;
   border-radius: 50px;
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
