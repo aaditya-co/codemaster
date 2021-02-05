@@ -7,7 +7,6 @@ a{
 p{
     text-align: center;
     margin: 5px;
-    border: 1px solid blue;
     padding: 4px;
 }
 .btn{
@@ -154,17 +153,17 @@ text{
 }
 
 .sidenav a:hover {
-  font-size: 20px;
+  font-size: 19px;
   color: red;
   
 }
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 36px;
-  margin-left: 50px;
+  top:0;
+  right: 80px;
+  font-size: 30px;
+  margin-left: 100px;
 }
 
 #main {
