@@ -155,7 +155,6 @@ text{
 .sidenav a:hover {
   font-size: 19px;
   color: red;
-  
 }
 
 .sidenav .closebtn {
@@ -174,4 +173,11 @@ text{
 @media screen and (max-height: 500px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+/*-------------------------------for content------------------------*/
+.heading{
+  text-align: center;
+}
+.active{
+  background-color:yellow;
 }
