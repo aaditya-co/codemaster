@@ -155,8 +155,8 @@ text{
 }
 
 .sidenav a:hover {
-  font-size: 19px;
-  color: red;
+  font-size: 18.5px;
+  color:green;
 }
 
 .sidenav .closebtn {
@@ -176,6 +176,8 @@ text{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
 /*-------------------------------for content------------------------*/
 .heading{
   text-align: center;
@@ -185,9 +187,8 @@ text{
 }
 pre{
   margin: 20px;
-  border: 3px solid green;
+  border: 3px solid  green;
   border-radius: 2px;
-  p
 }
 .tryit{
 padding-top: 30px;
@@ -199,6 +200,8 @@ font-size:30px;
 .btn:hover{
   box-shadow: 2px 4px 4px #000000;
 }
+
+
 /*-----------------------footer--------------------*/
 .footer{
   padding-top: 30px;
