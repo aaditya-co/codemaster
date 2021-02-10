@@ -2,132 +2,9 @@ body{
     background-image: linear-gradient(to right,  rgba(255, 255, 0, 0.664) , rgba(255, 166, 0, 0.664));"
     padding-bottom: 20%;
 }
-a{
-    text-decoration: none;
-}
-p{
-    text-align: center;
-    margin: 5px;
-    padding: 4px;
-}
-.btn{
-    width: 100%;
-}
 
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
-  
-}
-
-body{
-   background-color: #f3f5f9;
-   padding-bottom: 90px;
-}
-
-.wrapper{
-  display: flex;
-  position: relative;
-}
-
-.wrapper .sidebar{
-  width: 200px;
-  height: 100%;
-  background: #2b08f1;
-  padding: 10px 0px;
-  position: fixed;
-}
-
-.wrapper .sidebar h2{
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.wrapper .sidebar ul li{
-  padding: 15px;
-  border-bottom: 1px solid #c9aea2;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  border-top: 1px solid rgba(211,255,255,0.05);
-  margin-right: 20px;
-}    
-
-.wrapper .sidebar ul li a{
-  color: #bdb8d7;
-  display: block;
-  text-align: center;
-}
-
-.wrapper .sidebar ul li a .fas{
-  width: 25px;
-}
-
-.wrapper .sidebar ul li:hover{
-  background-color:lightgreen;
-  border-radius: 0px;
-}
-    
-.wrapper .sidebar ul li:hover a{
-  color: green;
-}
- 
-.wrapper .sidebar .social_media{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-.wrapper .sidebar .social_media a{
-  display: block;
-  width: 40px;
-  background: #3ddf1d;
-  height: 40px;
-  line-height: 45px;
-  text-align: center;
-  margin: 0 5px;
-  color: #bdb8d7;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.wrapper .main_content{
-  width: 100%;
-  margin-left: 240px;
-}
-
-.wrapper .main_content .header{
-  padding: 20px;
-  background: #fff;
-  color: #717171;
-  border-bottom: 1px solid #e0e4e8;
-}
-
-.wrapper .main_content .info{
-  margin: 20px;
-  color: #717171;
-  line-height: 25px;
-}
-
-.wrapper .main_content .info div{
-  margin-bottom: 20px;
-}
-
-@media (max-height: 500px){
-  .social_media{
-    display: none !important;
-  }
-}
-/*------------------------------------html page-----------------------------------------------*/
+/*------------------------------------main content for all course pages-----------------------------------------------*/
+/*----------------------------side bar----------------------*/
 text{
  text-align: center;
 }
@@ -138,7 +15,7 @@ text{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(211,255,255,255);
+  background-color: rgb(226, 226, 72);/*----------adithys change the color----------*/
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -147,7 +24,7 @@ text{
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 19px;
   text-align: center;
   display: block;
   color: black;
@@ -155,8 +32,8 @@ text{
 }
 
 .sidenav a:hover {
-  font-size: 18.5px;
-  color:green;
+  font-size: 19.5px;
+  color:green;/*----------adithys change the color----------*/
 }
 
 .sidenav .closebtn {
@@ -177,28 +54,28 @@ text{
   .sidenav a {font-size: 18px;}
 }
 
+.active{
+  background-image: linear-gradient(to right,  rgb(239, 243, 0) , rgb(252, 252, 252));
+}
 
 /*-------------------------------for content------------------------*/
 .heading{
   text-align: center;
 }
-.active{
-  background-color:yellow;
-}
+
 pre{
   margin: 20px;
-  border: 3px solid  green;
+  border: 2px solid  green;
   border-radius: 2px;
 }
 .tryit{
-padding-top: 30px;
-font-size:30px;
+font-size:40px;
+text-align: center;
 }
-.tryit:hover{
-  color: #2b08f1;
-}
+
+
 .btn:hover{
-  box-shadow: 2px 4px 4px #000000;
+  box-shadow: 2px 4px 4px yellowgreen;
 }
 
 
