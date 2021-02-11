@@ -257,6 +257,108 @@
   </div>
 
 
+<!---------------------------Horizontal Lines----------------------------->
+<div class="container">
+  <div><h1>Horizontal Lines</h1></div>
+  <div><p>Horizontal lines are used to visually break-up sections of a document. The &lthr&gt tag creates a line from the current position in the document to the right margin and breaks the line accordingly.</p></div>
+  <div><p>For example, you may want to give a line between two paragraphs as in the given example below −</p></div>
+  <div class="row">
+   <div class="col-sm-6 text-center">
+    <p>This is paragraph one and should be on top</p>
+    <hr />
+    <p>This is paragraph two and should be at bottom</p>
+   <div class="tryit"><div class="btn btn-outline-success">Try it</div></div>
+  </div>
+   <div class="col-sm-6">
+    <pre>
+      <code>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+        &lttitle&gtHorizontal Line Example&lt/title&gt
+        &lt/head&gt
+        &ltbody&gt
+        &ltp>This is paragraph one and should be on top&lt/p&gt
+        &lthr/&gt
+        &ltp>This is paragraph two and should be at bottom&lt/p&gt
+        &lt/body&gt
+        &lt/html&gt
+      </code>
+    </pre> 
+   </div>
+   <div><p>Again &lthr/&gt tag is an example of the empty element, where you do not need opening and closing tags, as there is nothing to go in between them</p></div>
+   <div><p>The &lthr/&gt element has a space between the characters hr and the forward slash. If you omit this space, older browsers will have trouble rendering the horizontal line, while if you miss the forward slash character and just use &lthr&gt it is not valid in XHTML</p></div>  
+  </div>
+  </div>
+
+
+<!---------------------------Preserve Formatting----------------------------->
+<div class="container">
+  <div><h1>Preserve Formatting</h1></div>
+  <div><p>Sometimes, you want your text to follow the exact format of how it is written in the HTML document. In these cases, you can use the preformatted tag &ltpre&gt</p></div>
+  <div><p>Any text between the opening &ltpre&gt tag and the closing &lt/pre&gt tag will preserve the formatting of the source document.</p></div>
+  <div class="row">
+   <div class="col-sm-6 ">
+    <pre>
+      function testFunction( strText ){
+         alert (strText)
+      }
+   </pre>
+
+    <div class="tryit"><div class="btn btn-outline-success">Try it</div></div>
+  </div>
+   <div class="col-sm-6">
+    <pre>
+      <code>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+        &lttitle&gtPreserve Formatting Example&lt/title&gt
+        &lt/head&gt
+        &ltbody&gt
+        &ltpre&gt
+        function testFunction( strText ){
+           alert (strText)
+        }
+        &lt/pre&gt
+        &lt/body&gt
+        &lt/html&gt
+      </code>
+    </pre> 
+   </div>
+  </div>
+  </div>
+
+
+
+  <!---------------------------Nonbreaking Spaces----------------------------->
+<div class="container">
+  <div><h1>Nonbreaking Spaces</h1></div>
+  <div><p>Suppose you want to use the phrase "12 Angry Men." Here, you would not want a browser to split the "12, Angry" and "Men" across two lines −</p></div>
+  <div><p>In cases, where you do not want the client browser to break text, you should use a nonbreaking space entity &nbsp; instead of a normal space. For example, when coding the "12 Angry Men" in a paragraph, you should use something similar to the following code −</p></div>
+
+  <div class="row">
+   <div class="col-sm-6 ">
+    <p>An example of this technique appears in the movie "12&nbsp;Angry&nbsp;Men."</p>
+    <div class="tryit"><div class="btn btn-outline-success">Try it</div></div>
+  </div>
+   <div class="col-sm-6">
+    <pre>
+      <code>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+        &lttitle&gtNonbreaking Spaces Example&lt/title&gt
+        &lt/head&gt
+        &ltbody&gt
+        &ltp>An example of this technique appears in the movie "12&nbsp;Angry&nbsp;Men."&lt/p&gt <!----dude have a look at thzz...--->
+        &lt/body&gt
+        &lt/html&gt
+      </code>
+    </pre> 
+   </div>
+  </div>
+  </div>
 
 
 
@@ -265,15 +367,20 @@
   <div class='container'>
     <div class="row footer">
     <div class="col-sm-2">
-      <div class="btn btn-outline-success font-monospace" role="button" href="#"><-Previous</div>
+      <div class="btn btn-outline-success font-monospace" role="button" ><a href="/course/courses/html/html_overview.html"><-Previous</a></div>
     </div>
     <div class="col-sm-8"></div>
     <div class="col-sm-2">
-      <div class="btn btn-outline-success font-monospace" role="button" href="#">Next-></div>
+      <div class="btn btn-outline-success font-monospace" role="button" ><a href="/course/courses/html/html_elements.html">Next-></a></div>
     </div>
    </div>
   </div>
   </div>
 </div>
+
+
+
+
+
 </body>
 </html>

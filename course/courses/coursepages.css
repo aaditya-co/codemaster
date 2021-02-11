@@ -80,6 +80,13 @@ text-align: center;
 
 
 /*-----------------------footer--------------------*/
+a{
+  text-decoration: none;
+  color: green;
+}
+a:hover{
+  color: white;
+}
 .footer{
   padding-bottom: 30px;
 }
