@@ -78,7 +78,17 @@ text-align: center;
   box-shadow: 2px 4px 4px yellowgreen;
 }
 
-
+/*--------------------social media logo ---------------------*/
+.social_media{
+  text-align: center;
+  font-size: 30px;
+  color: yellowgreen;
+  word-spacing: 30px;
+  padding-bottom: 40px ;
+}
+.social_media i:hover{
+ box-shadow:2px 5px 9px ;
+}
 /*-----------------------footer--------------------*/
 a{
   text-decoration: none;
