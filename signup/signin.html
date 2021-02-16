@@ -32,13 +32,13 @@
                 <label for="your_name"
                   ><i class="zmdi zmdi-account material-icons-name"></i>
                 </label>
-                <input type="text" name="userid" id="userid" placeholder="Your Name" required/>
+                <input type="text" name="userid" id="userid" placeholder="Your Name"/>
               </div>
               <div class="form-group">
                 <label for="your_pass">
                   <i class="zmdi zmdi-lock"></i>
                 </label>
-                <input type="password" name="userpsw" id="userpsw" placeholder="Password" required/>
+                <input type="password" name="userpsw" id="userpsw" placeholder="Password"/>
               </div>
               <div class="form-group">
                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term"/>
@@ -86,24 +86,25 @@
 function check(form)
 {
   if(form.userid.value=="ajith" && form.userpsw.value=="shah")
-   {
+  {
     window.open("/course/courses.html")/*opens xthe target page while Id & password matches*/
   }
- else
- {
- if(form.userpsw.value!="shah" && form.userid.value!="ajith")
- {
-	alert("Enter correct User id and password..!")
- }
- else if(form.userpsw.value!="shah")
- {
-	alert("Enter correct password..!")
- }
- else if(form.userid.value!="ajith")
- { 
-   alert("Enter correct User ID..!")
- }
- }
+  else if(form.userid.value=="" && form.userpsw.value=="")
+  {
+    alert("Please Enter user ID and password")
+  }
+    else if(form.userid.value!="ajith" && form.userpsw.value=="shah")
+  {
+	  alert("Enter correct User ID..!")
+  }
+  else if(form.userid.value=="ajith" && form.userpsw.value!="shah")
+  { 
+    alert("Enter correct password..!")
+  }
+  else if(form.userid.value!="ajith" && form.userpsw.value!="shah")
+  {
+    alert("Enter correct User ID and password..!")
+  }
 }
 
 </script>
