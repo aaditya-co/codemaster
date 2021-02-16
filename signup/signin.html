@@ -93,6 +93,14 @@ function check(form)
   {
     alert("Please Enter user ID and password")
   }
+  else if(form.userid.value=="ajith" && form.userpsw.value=="")
+  {
+    alert("Please enter your password..!")
+  }
+  else if(form.userid.value=="" && form.userpsw.value=="shah")
+  {
+    alert("Please enter your User ID..!")
+  }
     else if(form.userid.value!="ajith" && form.userpsw.value=="shah")
   {
 	  alert("Enter correct User ID..!")
@@ -105,6 +113,7 @@ function check(form)
   {
     alert("Enter correct User ID and password..!")
   }
+  
 }
 
 </script>
