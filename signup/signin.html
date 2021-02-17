@@ -27,7 +27,7 @@
           </div>
           <div class="signin-form">
             <h2 class="form-title">Sign In</h2>
-            <form method="POST" class="register-form" id="login-form" name="login">
+            <form method="POST" action="#.php" class="register-form" id="login-form" name="login">
               <div class="form-group">
                 <label for="your_name"
                   ><i class="zmdi zmdi-account material-icons-name"></i>
@@ -41,9 +41,9 @@
                 <input type="password" name="userpsw" id="userpsw" placeholder="Password"/>
               </div>
               <div class="form-group">
-                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term"/>
-                <label for="remember-me" class="label-agree-term"
-                  ><span><span></span></span>Remember me</label
+                <input type="checkbox" name="rememberme" id="remember-  me" class="agree-term"/>
+                <label for="remember-me" class="label-agree-term">
+                  <span><span></span></span>Remember me</label
                 >
               </div>
               <div class="form-group form-button">
@@ -93,28 +93,14 @@ function check(form)
   {
     alert("Please Enter user ID and password")
   }
-  else if(form.userid.value=="ajith" && form.userpsw.value=="")
-  {
-    alert("Please enter your password..!")
-  }
-  else if(form.userid.value=="" && form.userpsw.value=="shah")
-  {
-    alert("Please enter your User ID..!")
-  }
-    else if(form.userid.value!="ajith" && form.userpsw.value=="shah")
-  {
-	  alert("Enter correct User ID..!")
-  }
-  else if(form.userid.value=="ajith" && form.userpsw.value!="shah")
-  { 
-    alert("Enter correct password..!")
-  }
   else if(form.userid.value!="ajith" && form.userpsw.value!="shah")
   {
     alert("Enter correct User ID and password..!")
   }
   
 }
+
+/*---------------------remember me----------------*/
 
 </script>
 
