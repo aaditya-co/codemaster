@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sign In</title>
-    <link rel="icon" href="/logo/cmtitlelogo.png" type="image/icon type">
+    <link rel="icon" href="/logo/titlelogo1.svg" type="image/icon type">
     <link rel="stylesheet"
       href="fonts/material-icon/css/material-design-iconic-font.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
@@ -89,11 +89,7 @@ function check(form)
   {
     window.open("/course/courses.html")/*opens xthe target page while Id & password matches*/
   }
-  else if(form.userid.value=="" && form.userpsw.value=="")
-  {
-    alert("Please Enter user ID and password")
-  }
-  else if(form.userid.value!="ajith" && form.userpsw.value!="shah")
+  else(form.userid.value!="ajith" && form.userpsw.value!="shah")
   {
     alert("Enter correct User ID and password..!")
   }
