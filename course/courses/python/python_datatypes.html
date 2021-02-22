@@ -91,58 +91,37 @@
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 </div>
-<!--------------------------main content----------------------->
-<div class="container"><h1 class="heading">PYTHON</h1>
-<div><p>Python is a general-purpose interpreted,interactive,object-oriented and high-level programming language.It was created by Guido van Rossum during 1985-1990.Like Perl,Python source code is also available under the GNU General Public License(GPL).</p></div>
-<div><h1>Why Learn Python?</h1></div>
-<ol>
-  <li>• Python works on different platforms(Windows,Mac,Linux,Raspberry Pi,etc).</li>
-  <li>•	Python has a simple syntax similar to the English language.</li>
-  <li>•	Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
-  <li>•	Python runs on an interpreter system,meaning that code can be executed as soon as it is written.This means that prototyping can be very quick.</li>
-  <li>•	Python can be treated in a procedural way,an object-oriented way or a functional way.</li>
-</ol>
-<div><h1>Hello World using Python</h1></div>
-<div>
-
-
-<div class='container'>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="tryit"><a href="/course/courses/python/python_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
-    </div>
-<div class="col-sm-6">
-  <pre>
-    <code>
-      print("HELLO WORLD!")
-    </code>
-  </pre>  
-</div>
-</div>
-</div>
-<div><p>The print statement needs to be followed by paranthesis,which enclose the output we want to generate.To run a program we need the extension as .py The print statement can also be used to output multiple lines of text.</p></div>
-<div><h1>COMMAND LINE</h1></div>
-<div><p>Whenever the comments starts with #,Python will ignore them.To add a multiline comment you could insert # for each line:</p></div>
-<div class='container'>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="tryit"><a href="/course/courses/python/python_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
-    </div>
-<div class="col-sm-6">
-  <pre>
-    <code>
-      #This is a comment
-      print("Hello,World!")
-    </code>
-  </pre>  
-</div>
-</div>
-</div>
-
 <div class="container">
- <div><h1>PYTHON VARIABLES</h1></div>
-  <div><p>Variables are containers for storing data values.In Python,variables are created when you assign a value to it.</p></div>
-  <div><h2>Creating Variables:</h2></div>
+    <div><h1>DATA TYPES</h1></div>
+    <div><p>In programming,data type is an imprtant concept.Variables can store data of different types and different types can do different things.Python has the following data types built-in by default,in these categories:</p></div>
+          <table border = "1">
+            <tr>
+              <td>Text type</td>
+              <td>str</td>
+            </tr>
+            <tr>
+              <td>Numeric Types</td>
+              <td>int,float,complex</td>
+            </tr>
+            <tr>
+              <td>Sequence Types</td>
+              <td>list,tuple,range</td>
+            </tr>
+            <tr>
+              <td>Mapping type</td>
+              <td>dict</td>
+            </tr>
+            <tr>
+              <td>Boolean Type</td>
+              <td>bool</td>
+            </tr>
+            <tr>
+              <td>Set types and Binary types</td>
+              <td>set,bytes</td>
+            </tr>
+          </table>
+  <div><h2>Getting the data type:</h2></div>
+  <div><p>You can get the data type of any object by using the type() function:</p></div>
   <div class='container'>
     <div class="row">
       <div class="col-sm-6">
@@ -151,96 +130,28 @@
   <div class="col-sm-6">
     <pre>
       <code>
-        a="Welcome to Python!"
-        print(a)
+        x=5
+        print(type(x))
       </code>
     </pre>  
   </div>
   </div>
   </div>  
-</div>
-<!---------------------------------------------------------------->
-<div class="container">
-  <div><h1>DATA TYPES</h1></div>
-  <div><p>In programming,data type is an imprtant concept.Variables can store data of different types and different types can do different things.Python has the following data types built-in by default,in these categories:</p></div>
-        <table border = "1">
-          <tr>
-            <td>Text type</td>
-            <td>str</td>
-          </tr>
-          <tr>
-            <td>Numeric Types</td>
-            <td>int,float,complex</td>
-          </tr>
-          <tr>
-            <td>Sequence Types</td>
-            <td>list,tuple,range</td>
-          </tr>
-          <tr>
-            <td>Mapping type</td>
-            <td>dict</td>
-          </tr>
-          <tr>
-            <td>Boolean Type</td>
-            <td>bool</td>
-          </tr>
-          <tr>
-            <td>Set types and Binary types</td>
-            <td>set,bytes</td>
-          </tr>
-        </table>
-<div><h2>Getting the data type:</h2></div>
-<div><p>You can get the data type of any object by using the type() function:</p></div>
-<div class='container'>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="tryit"><a href="/course/courses/python/python_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
-    </div>
-<div class="col-sm-6">
-  <pre>
-    <code>
-      x=5
-      print(type(x))
-    </code>
-  </pre>  
-</div>
-</div>
-</div>  
-</div>
-<div><h2>What are operators in python?</h2></div>
-<div><p>Operators are special symbols in Python that carry out arithmetic or logical computation.The value that the operator operates on is called the operand.</p></div>
-<div><p>For Example:</p></div>
-<div class='container'>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="tryit"><a href="/course/courses/python/python_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
-    </div>
-<div class="col-sm-6">
-  <pre>
-    <code>
-     >>> 2+3
-     5
-    </code>
-  </pre>  
-</div>
-</div>
-</div>  
-</div>
-<div><p>Here,+ is the operator that performs addition.2 and 3 are the operands and 5 is the output of the operation.Python are classified into many operators such as:</p></div>
-      
+  </div>
 <!---------------------------------------------------------------->
 
 <div class="footer">
   <div class='container'>
     <div class="row footer">
     <div class="col-sm-2">
-      <div class="btn btn-outline-success font-monospace" role="button" ><a href="python.html"><-Previous</a></div>
+      <div class="btn btn-outline-success font-monospace" role="button" href="#"><a href="/course/courses/python/python_variables.html"><--Previous</a></div>
     </div>
     <div class="col-sm-8"></div>
     <div class="col-sm-2">
-      <div class="btn btn-outline-success font-monospace" role="button"><a href="python_basics.html">Next-></a></div>
+      <div class="btn btn-outline-success font-monospace" role="button" href="#"><a href="/course/courses/python/python_operators.html">Next-></a></div>
     </div>
+   </div>
   </div>
-</div>
+  </div>
 </body>
 </html>
