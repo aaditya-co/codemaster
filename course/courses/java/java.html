@@ -159,28 +159,30 @@
 <div class="container">
  <div><h2>How to compile and run the above program</h2></div>
   <div><p>Prerequisite: You need to have java installed on your system.</p></div>
-   <div><p>Step 1: Open a text editor, like Notepad on windows and TextEdit on Mac. Copy the above program and paste it in the text editor.
+   <div><p><b>Step 1</b>: Open a text editor, like Notepad on windows and TextEdit on Mac. Copy the above program and paste it in the text editor.
     You can also use IDE like Eclipse to run the java program but we will cover that part later in the coming tutorials. For the sake of simplicity, I will only use text editor and command prompt (or terminal) for this tutorial</p></div>
-  <div><p>Step 2: Save the file as FirstJavaProgram.java. You may be wondering why we have named the file as FirstJavaProgram, the thing is that we should always name the file same as the public class name. In our program, the public class name is FirstJavaProgram, that’s why our file name should be FirstJavaProgram.java.
+  <div><p><b>Step 2</b>: Save the file as FirstJavaProgram.java. You may be wondering why we have named the file as FirstJavaProgram, the thing is that we should always name the file same as the public class name. In our program, the public class name is FirstJavaProgram, that’s why our file name should be FirstJavaProgram.java.
   </p></div>  
   <div><p>
-    Step 3: In this step, we will compile the program. For this, open command prompt (cmd) on Windows, if you are Mac OS then open Terminal.
-    To compile the program, type the following command and hit enter.
-                      <b>Javac FirstJavaProgram.java</b>
+    <b>Step 3:</b>
+    In this step, we will compile the program. For this, open command prompt (cmd) on Windows, if you are Mac OS then open Terminal.
+    To compile the program, type the following command and hit enter.</p>
+                     <p> <b><center>Javac FirstJavaProgram.java</center></b></p>
     You may get this error when you try to compile the program: “javac’ is not recognized as an internal or external command, operable program or batch file“. This error occurs when the java path is not set in your system
     If you get this error then you first need to set the path before compilation.
     Set Path in Windows:
     Open command prompt (cmd), go to the place where you have installed java on your system and locate the bin directory, copy the complete path and write it in the command like this.
-                      <b>set path=C:\Program Files\Java\jdk1.8.0_121\bin</b>
-    Open Terminal, type the following command and hit return.
-    export <b>JAVA_HOME=/Library/Java/Home</b>
+  </p><p> <b>set path=C:\Program Files\Java\jdk1.8.0_121\bin</b></p>
+  <p>
+    Open Terminal, type the following command and hit return.</p>
+   <p><center> export <b>JAVA_HOME=/Library/Java/Home</b></center></p>
     Type the following command on terminal to confirm the path.
     echo <b>$JAVA_HOME</b> 
     The steps above are for setting up the path temporary which means when you close the command prompt or terminal, the path settings will be lost and you will have to set the path again next time you use it. I will share the permanent path setup guide in the coming tutorial.
     </p>
     </div>
-    <div><p>
-    Step 4: After compilation the .java file gets translated into the .class file(byte code). Now we can run the program. To run the program, type the following command and hit enter:
+    <div><p><b>Step 4:</b>
+     After compilation the .java file gets translated into the .class file(byte code). Now we can run the program. To run the program, type the following command and hit enter:
     java FirstJavaProgram
     Note that you should not append the .java extension to the file name while running the program.</p></div>
 </div>
