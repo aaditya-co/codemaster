@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<meta charset="utf-8">
-	<title>Login Form Tutorial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="icon" href="./logo/titlelogo1.svg" type="image/icon type">
+	<title>Login Form</title>
 	<style>
+		body{
+			background-image: linear-gradient(to right, rgba(255, 255, 0, 0.664),  rgba(255, 166, 0, 0.664));"
+		}
 		.login-form {
 			width: 300px;
 			margin: 0 auto;
@@ -18,7 +25,7 @@
 		}
 
 		.login-form a:link {
-			color: blueviolet;
+			text-decoration: none;
 			background-color: transparent;
 			text-decoration: none;
 		}
@@ -39,16 +46,7 @@
 			box-sizing: border-box;
 		}
 
-		.login-form button[type="submit"] {
-			width: 100%;
-			padding: 15px;
-			background-color: #535b63;
-			border: 0;
-			box-sizing: border-box;
-			cursor: pointer;
-			font-weight: bold;
-			color: #ffffff;
-		}
+		
 	</style>
 </head>
 
@@ -58,7 +56,7 @@
 		<form action="login" method="POST">
 			<input type="text" name="userName" placeholder="Username" required>
 			<input type="password" name="password" placeholder="Password" required>
-			<button type="submit">LOGIN</button>
+			<button class="btn btn-outline-success btn-block" type="submit">LOGIN</button>
 		</form>
 		<p><a href="registerform">Doesnot have an account?Register</a></p>
 	</div>
