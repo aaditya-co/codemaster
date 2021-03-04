@@ -59,8 +59,9 @@ app.post('/login', async function (request, response) {
 
 app.get('/home', function (request, response) {
 	if (request.session.loggedin) {
-		response.send('Welcome back, ' + request.session.username + '!');
-	} else {
+		response.redirect('http://127.0.0.1:5500/course/courses.html');		
+	} 
+		else {
 		response.send('Invalid Username & Password!');
 	}
 	response.end();
