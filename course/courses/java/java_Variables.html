@@ -144,6 +144,7 @@
 <p>Where type is one of Java's types (such as int or String), and variable is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
 To create a variable that should store text, look at the following example:
 </p></div>
+<p>Create a variable called name of type String and assign it the value "John":</p>
 <!---------------------------------------------------------------------->
 <div class='container'>
     <div class="row">
@@ -151,7 +152,7 @@ To create a variable that should store text, look at the following example:
      <div class="tryit"><a href="/course/courses/java/java_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
       </div>
   <div class="col-sm-6">
-    <p>Create a variable called name of type String and assign it the value "John":</p>
+   
     <pre>
       <code>
         public class Main 
@@ -168,16 +169,195 @@ To create a variable that should store text, look at the following example:
       </div>
       </div>
       </div>
+<!--------------------------main content----------------------->
+<div class="container">
+    <div><h2>Variables naming convention in java</h2></div> 
+    <div><p>
+        <table border="1">
+            <ol>
+            <tr> 
+                <td><li>Names can contain letters, digits, underscores, and dollar signs</li></td>
+            </tr>
+            <tr>
+                <td><li>Names must begin with a letter</li></td>
+            </tr>
+            <tr>
+                <td><li>Names should start with a lowercase letter and it cannot contain whitespace</li></td>
+            <tr>
+                <td><li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li></td>
+            </tr>
+            <tr>
+                <td><li>Names are case sensitive ("myVar" and "myvar" are different variables)</li></td>
+            </tr>
+            <tr>
+            <td><li>Reserved words (like Java keywords, such as int or boolean) cannot be used as names</li></td>
+            </tr>
+            </ol>
+        </table>
+    </p></div>
+<!--------------------------main content----------------------->
+<div class="container">
+    <div><h2>Types of Variables in Java</h2></div> 
+    <div><p>There are three types of variables in Java.</p>
+       <ol>
+            <li>Local variable </li>
+            <li>Static (or class) variable</li>
+            <li>Instance variable</li>
+       </ol>
+    </div>
+<!--------------------------main content----------------------->
+<div class="container">
+  <div><h2>Local Variable</h2></div>   
+  <div><p>These variables are declared inside method of the class. Their scope is limited to the method which means that You can’t change their values and access them outside of the method. In this example, I have declared the instance variable with the same name as local variable, this is to demonstrate the scope of local variables.</p></div>
+  <p>Example of Local variable</p>  
+<!---------------------------------------------------------------------->
+<div class='container'>
+  <div class="row">
+    <div class="col-sm-6">
+   <div class="tryit"><a href="/course/courses/java/java_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+    </div>
+<div class="col-sm-6">
+  
+  <pre>
+    <code>
+      public class VariableExample
+      {
+        // instance variable
+        public String myVar="instance variable";
+        public void myMethod()
+     {
+           // local variable
+           String myVar = "Inside Method";
+           System.out.println(myVar);
+      }
+        public static void main(String args[])
+      {
+           // Creating object
+           VariableExample obj = new VariableExample();
+         /* We are calling the method, that changes the 
+            * value of myVar. We are displaying myVar again after 
+            * the method call, to demonstrate that the local 
+            * variable scope is limited to the method itself.
+            */
+           System.out.println("Calling Method");
+           obj.myMethod();
+           System.out.println(obj.myVar);
+        }
+     }
+      </code>
+    </pre>
+    </div>
+    </div>
+    </div>
 
+<!--------------------------main content----------------------->
+<div class="container">
+  <div><h2>Static Variable</h2></div>  
+  <div><p>Static variables are also known as class variable because they are associated with the class and common for all the instances of class. For example, If I create three objects of a class and access this static variable, it would be common for all, the changes made to the variable using one of the object would reflect when you access it through other objects.</p></div>
+  <p>Example of Static variable</p>
+  <!---------------------------------------------------------------------->
+<div class='container'>
+  <div class="row">
+    <div class="col-sm-6">
+   <div class="tryit"><a href="/course/courses/java/java_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+    </div>
+<div class="col-sm-6">
+  
+  <pre>
+    <code>
+public class StaticVarExample 
+{
+      public static String myClassVar="class or static variable";
+      public static void main(String args[])
+  {
+      StaticVarExample obj = new StaticVarExample();
+      StaticVarExample obj2 = new StaticVarExample();
+      StaticVarExample obj3 = new StaticVarExample();
+      //All three will display "class or static variable"
+      System.out.println(obj.myClassVar);
+      System.out.println(obj2.myClassVar);
+     System.out.println(obj3.myClassVar);
+     //changing the value of static variable using obj2
+      obj2.myClassVar = "Changed Text";
+     //All three will display "Changed Text"
+      System.out.println(obj.myClassVar);
+      System.out.println(obj2.myClassVar);
+      System.out.println(obj3.myClassVar);
+   }
+}
 
+      </code>
+    </pre>
+    </div>
+    </div>
+    </div>
+<!--------------------------main content----------------------->
+<div class="container">
+  <div><h2>Instance variable</h2></div>  
+  <div><p>Each instance(objects) of class has its own copy of instance variable. Unlike static variable, instance variables have their own separate copy of instance variable. We have changed the instance variable value using object obj2 in the following program and when we displayed the variable using all three objects, only the obj2 value got changed, others remain unchanged. This shows that they have their own copy of instance variable.</p></div>
+  <p>Example of Instance variable</p>
+<!---------------------------------------------------------------------->
+<div class='container'>
+  <div class="row">
+    <div class="col-sm-6">
+   <div class="tryit"><a href="/course/courses/java/java_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+    </div>
+<div class="col-sm-6">
+  
+  <pre>
+    <code>
+      public class InstanceVarExample
+      {
+         String myInstanceVar="instance variable";
+         public static void main(String args[]){
+        InstanceVarExample obj = new InstanceVarExample();
+        InstanceVarExample obj2 = new InstanceVarExample();
+        InstanceVarExample obj3 = new InstanceVarExample();
+        System.out.println(obj.myInstanceVar);
+        System.out.println(obj2.myInstanceVar);
+        System.out.println(obj3.myInstanceVar);
+             obj2.myInstanceVar = "Changed Text";
+              System.out.println(obj.myInstanceVar);
+        System.out.println(obj2.myInstanceVar);
+        System.out.println(obj3.myInstanceVar);
+         }
+      }
+       </code>
+    </pre>
+    </div>
+    </div>
+    </div>
+<!--------------------------main content----------------------->
+<div class="container">
+  <div><h2>Declare Many Variable</h2></div> 
+  <p>To declare more than one variable of the same type, use a comma-separated list:</p> 
+<!---------------------------------------------------------------------->
+<div class='container'>
+  <div class="row">
+    <div class="col-sm-6">
+   <div class="tryit"><a href="/course/courses/java/java_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+    </div>
+<div class="col-sm-6">
+ 
+  <pre>
+    <code>
+      public class Main 
+      {
+        public static void main(String[] args)
+       {
+          int x = 5, y = 6, z = 50;
+          System.out.println(x + y + z);
+        }
+      }
 
-
-
-
-
-
-
-    <div class="footer">
+      
+       </code>
+    </pre>
+    </div>
+    </div>
+    </div>
+<!------------------------------------------------------------------------->
+ <div class="footer">
         <div class='container'>
           <div class="row footer">
           <div class="col-sm-2">
