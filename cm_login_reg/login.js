@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var session = require('express-session');
+var session = require('express-session'); 
 var path = require('path');
 
 var usersModel = require('./usermodel');
@@ -35,7 +35,7 @@ app.post('/register', async function (request, response) {
 	let addUser = new usersModel(reqData);
 
 	await addUser.save().then(function (data) {
-		response.send(data.userName + ' inserted successfully');
+		response.redirect('http://127.0.0.1:3000/loginform');
 	}).catch(function (error) {
 		let errorMessage = moongoseUtils.mongooseErrorHandler(error, reqData.userName);
 		response.send(errorMessage);
