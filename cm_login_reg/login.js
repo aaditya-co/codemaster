@@ -40,7 +40,7 @@ app.post('/register', async function (request, response) {
 		let errorMessage = moongoseUtils.mongooseErrorHandler(error, reqData.userName);
 		response.send(errorMessage);
 	});
-});
+}); 
 
 app.post('/login', async function (request, response) {
 	const userName = request.body.userName; 
